@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Elements - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 40px;
+        }
+        .button {
+            width: 200px;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 16px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .button:hover {
+            transform: scale(1.05);
+        }
+        .login-button {
+            background-color: #66ccff;
+            border-color: #3399ff;
+        }
+        .register-button {
+            background-color: #66ff66;
+            border-color: #33cc33;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Programming Elements</h1>
+    <div class="container">
+        <button class="button login-button" onclick="location.href='login/'">Login</button>
+        <button class="button register-button" onclick="location.href='register/'">Register</button>
+    </div>
+</body>
+</html>
