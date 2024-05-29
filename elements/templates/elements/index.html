@@ -16,9 +16,45 @@
             justify-content: center;
             min-height: 100vh;
         }
+        header {
+            font-family: century schoolbook, sans-serif;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 120px;
+            background-color: rgb(27, 168, 183);
+            color: white;
+            text-align: center;
+            line-height: 60px;
+            font-size: 24px;
+        }
         h1 {
             margin-bottom: 20px;
             color: #343a40;
+        }
+        h2 {
+            color: #343a40;
+            margin-left: 35px;
+        }
+        .aside_menu{
+            position: fixed;
+            float: left;
+            height: 591px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            background: #cecece;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 1%;
+            left: 0;
+            bottom: 0;
+            border-right: 5px solid #9e9e9e;
+        }
+        .aside_menu ul li {
+            color: #000000;
+            display: block;
+            margin-top: 20px;
         }
         .container {
             display: flex;
@@ -53,11 +89,31 @@
         }
     </style>
 </head>
+
+<header>
+    <h1>Programming Elements</h1>
+    <a href="http://127.0.0.1:8000/">
+        <img src="../../../static/vendor/img/pr-el-header.png" alt="Описание изображения" width = "90" height = "90" style="position: absolute; left: 1050px; top: 20px;">
+    </a>
+</header>
+
 <body>
-    <h1>Welcome to Programming Elements</h1>
+    <div class="aside_menu">
+        <h2>Навигация</h2>
+        <ul>
+            <a href=""><li>О приложении</li></a>
+            <a href="http://127.0.0.1:8000/login/"><li>Вход</li></a>
+            <a href="http://127.0.0.1:8000/register/"><li>Регистрация</li></a>
+            <a href=""><li>...</li></a>
+        </ul>
+    </div>
+
+    <p>Это приложение для изучения языков программирования</p>
+
     <div class="container">
         <button class="button login-button" onclick="location.href='login/'">Login</button>
         <button class="button register-button" onclick="location.href='register/'">Register</button>
     </div>
 </body>
+
 </html>
